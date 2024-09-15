@@ -11,15 +11,17 @@ function determineTimeUnits(minTime: DateTime, maxTime: DateTime): TimeUnit[] {
     if (diffInYears >= 100) return ['century', 'year'];
     if (diffInYears > 20) return ['year'];
     if (diffInYears >= 1) return ['year', 'month'];
-    if (diff.as('days') > 7) return ['day', 'hour'];
-    if (diff.as('hours') > 24) return ['hour', 'minute'];
-    if (diff.as('minutes') > 60) return ['minute', 'second'];
+    if (diff.as('days') > 90) return ['year', 'month'];
+    if (diff.as('days') > 7) return ['month', 'day'];
+    if (diff.as('hours') > 24) return ['day'];
+    if (diff.as('minutes') > 60) return ['hour'];
     return ['second'];
 }
 
 const NOTCH_HEIGHT_SECONDARY = 10;
 const NOTCH_HEIGHT_PRIMARY = 20;
 const TEXT_HEIGHT_OFFSET = 40;
+let renders = 0;
 
 export function drawNotch(ctx: CanvasRenderingContext2D, x: number, y: number, primary: boolean, text?: string) {
     ctx.beginPath();
@@ -64,8 +66,7 @@ export function renderTimeAxis(ctx: CanvasRenderingContext2D, minTime: DateTime,
     ctx.moveTo(rect.x, rect.y+rect.height/2);
     ctx.lineTo(rect.x+rect.width, rect.y+rect.height/2);
     ctx.stroke();
-    console.log('stoked', units)
-
+    let iters = 0
     units.forEach((unit, index) => {
         const isMainUnit = index === 0;
         const fontSize = isMainUnit ? 14 : 10;
@@ -74,9 +75,14 @@ export function renderTimeAxis(ctx: CanvasRenderingContext2D, minTime: DateTime,
 
         let current = minTime.startOf(unit as DurationUnit);
         while (current <= maxTime) {
-            const x = (current.diff(minTime).as('milliseconds') / interval.length('milliseconds')) * rect.width + rect.x;
-            drawNotch(ctx, x, rect.y+rect.height/2, isMainUnit, isMainUnit ? formatTime(current, unit) : undefined);
+            if (current >= minTime) {
+                const x = (current.diff(minTime).as('milliseconds') / interval.length('milliseconds')) * rect.width + rect.x;
+                drawNotch(ctx, x, rect.y+rect.height/2, isMainUnit, isMainUnit ? formatTime(current, unit) : undefined);
+            }
             current = current.plus({ [unit]: 1 });
+            iters++
         }
     });
+    renders++
+    console.log("renders", renders, iters)
 }
