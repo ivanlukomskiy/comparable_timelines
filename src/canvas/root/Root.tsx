@@ -103,8 +103,6 @@ const Canvas: React.FC = () => {
                 pan = e.deltaX > 0 ? -PAN_SPEED : PAN_SPEED;
             }
 
-            console.log("wheel", e.deltaY, zoom, e.deltaX, pan);
-
             const currentWindow = maxTime.diff(minTime);
             const fraction = time.diff(minTime).as('milliseconds') / currentWindow.as('milliseconds');
             const newWindow = currentWindow.mapUnits(unit => unit * zoom);
