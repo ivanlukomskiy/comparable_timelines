@@ -1,10 +1,11 @@
-import { DateTime, Interval, DurationUnit } from 'luxon';
-import {Rect} from "../../types.ts";
+import {DateTime, DurationUnit, Interval} from 'luxon';
+import {ViewPort, viewPortDuration} from "../../types.ts";
+import {$timelineRect, $viewport} from "../../store.ts";
 
 type TimeUnit = 'second' | 'minute' | 'hour' | 'day' | 'month' | 'year' | 'century';
 
-function determineTimeUnits(minTime: DateTime, maxTime: DateTime): TimeUnit[] {
-    const diff = maxTime.diff(minTime);
+function determineTimeUnits(viewPort: ViewPort): TimeUnit[] {
+    const diff = viewPortDuration(viewPort);
     const diffInYears = diff.as('years');
 
     if (diffInYears > 500) return ['century'];
@@ -54,10 +55,11 @@ function formatTime(current: DateTime, unit: string) {
     }
 }
 
-export function renderTimeAxis(ctx: CanvasRenderingContext2D, minTime: DateTime, maxTime: DateTime, rect: Rect) {
-    const units = determineTimeUnits(minTime, maxTime);
-    const interval = Interval.fromDateTimes(minTime, maxTime);
-
+export function renderTimeAxis(ctx: CanvasRenderingContext2D) {
+    const rect = $timelineRect.get();
+    const viewport = $viewport.get();
+    const units = determineTimeUnits(viewport);
+    const interval = Interval.fromDateTimes(viewport.min, viewport.max);
     // Draw the main horizontal line
 
     ctx.strokeStyle = '#000000';  // Black color
@@ -73,10 +75,10 @@ export function renderTimeAxis(ctx: CanvasRenderingContext2D, minTime: DateTime,
         ctx.font = `${fontSize}px Arial`;
         ctx.textAlign = 'center';
 
-        let current = minTime.startOf(unit as DurationUnit);
-        while (current <= maxTime) {
-            if (current >= minTime) {
-                const x = (current.diff(minTime).as('milliseconds') / interval.length('milliseconds')) * rect.width + rect.x;
+        let current = viewport.min.startOf(unit as DurationUnit);
+        while (current <= viewport.max) {
+            if (current >= viewport.min) {
+                const x = (current.diff(viewport.min).as('milliseconds') / interval.length('milliseconds')) * rect.width + rect.x;
                 drawNotch(ctx, x, rect.y+rect.height/2, isMainUnit, isMainUnit ? formatTime(current, unit) : undefined);
             }
             current = current.plus({ [unit]: 1 });
