@@ -1,7 +1,7 @@
 import {applyPan, applyZoom, mouseToTime} from "../types.ts";
 import React, {useCallback, useEffect, useRef, useState} from "react";
 import {DateTime} from "luxon";
-import {$animationTimestasmp, $timelineRect, $viewport, $zooming} from "../store.ts";
+import {$animationTimestasmp, $timelineRect, $viewport, $zooming} from "../stores/store.ts";
 
 
 const WHEEL_TIMEOUT_MS = 500;

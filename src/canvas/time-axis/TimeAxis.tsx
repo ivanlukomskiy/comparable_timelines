@@ -1,6 +1,6 @@
 import {DateTime, DurationUnit, Interval} from 'luxon';
-import {ViewPort, viewPortDuration} from "../../types.ts";
-import {$timelineRect, $viewport} from "../../store.ts";
+import {$timelineRect} from "../../stores/store.ts";
+import {$viewport, ViewPort, viewPortDuration} from "../../stores/viewport.ts";
 
 type TimeUnit = 'second' | 'minute' | 'hour' | 'day' | 'month' | 'year' | 'century';
 
@@ -75,6 +75,7 @@ export function renderTimeAxis(ctx: CanvasRenderingContext2D) {
         ctx.font = `${fontSize}px Arial`;
         ctx.textAlign = 'center';
 
+        // @ts-expect-error some cast stuff
         let current = viewport.min.startOf(unit as DurationUnit);
         while (current <= viewport.max) {
             if (current >= viewport.min) {

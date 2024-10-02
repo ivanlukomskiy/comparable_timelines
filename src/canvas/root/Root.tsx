@@ -1,17 +1,12 @@
 import React, {useCallback, useEffect, useRef} from 'react';
 import {renderTimeAxis} from "../time-axis/TimeAxis.tsx";
-import {useViewPort} from "../../hooks/useZoom.ts";
-import {$animationTimestasmp, $timelineRect, $zooming} from "../../store.ts";
+import {$timelineRect} from "../../stores/store.ts";
+import {updateViewport} from "../../stores/viewport.ts";
+import {$animationDeadline} from "../../stores/animation.ts";
 
 
 const Canvas: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
-    const animationFrameId = useRef<number | null>(null);
-    const updateViewport = useViewPort({canvasRef})
-    const updateViewportRef = useRef<(() => void)>(updateViewport);
-    useEffect(() => {
-        updateViewportRef.current = updateViewport;
-    }, [updateViewport]);
 
     const drawCanvas = useCallback((animationTimestamp: number) => {
         const canvas = canvasRef.current;
@@ -22,25 +17,14 @@ const Canvas: React.FC = () => {
         if (!ctx) {
             return;
         }
-        $animationTimestasmp.set(animationTimestamp);
-        updateViewportRef.current();
+        updateViewport(animationTimestamp)
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         renderTimeAxis(ctx);
-        if ($zooming.get()) {
-            animationFrameId.current = requestAnimationFrame(drawCanvas);
+        if (animationTimestamp <= $animationDeadline.get()) {
+            requestAnimationFrame(drawCanvas);
         }
     }, []);
 
-    useEffect(() => {
-        const unsubscribe = $zooming.subscribe((zooming) => {
-            if (zooming) {
-                animationFrameId.current = requestAnimationFrame(drawCanvas);
-            }
-        })
-        return () => {
-            unsubscribe();
-        }
-    }, [drawCanvas]);
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -65,7 +49,6 @@ const Canvas: React.FC = () => {
                 width: innerWidth * ratio - 300,
                 height: innerHeight * ratio / 10,
             })
-            animationFrameId.current = requestAnimationFrame(drawCanvas);
         };
 
         window.addEventListener('resize', resizeCanvas);
@@ -77,38 +60,8 @@ const Canvas: React.FC = () => {
     }, [drawCanvas]);
 
     useEffect(() => {
-        console.log('init')
-        animationFrameId.current = requestAnimationFrame(drawCanvas);
-    }, []);
-
-    // useEffect(() => {
-    //     const canvas = canvasRef.current;
-    //     if (!canvas) return;
-    //
-    //     const resizeCanvas = () => {
-    //         const {innerWidth, innerHeight} = window;
-    //         const {devicePixelRatio: ratio = 1} = window;
-    //         canvas.width = innerWidth * ratio;
-    //         canvas.height = innerHeight * ratio;
-    //         canvas.style.width = `${innerWidth}px`;
-    //         canvas.style.height = `${innerHeight}px`;
-    //     };
-    //
-    //     window.addEventListener('resize', resizeCanvas);
-    //     resizeCanvas();
-    //
-    //     console.log('request animation frame')
-    //     animationFrameId.current = requestAnimationFrame(drawCanvas);
-    //
-    //     return () => {
-    //         console.log('removeing')
-    //         window.removeEventListener('resize', resizeCanvas);
-    //         if (animationFrameId.current) {
-    //             cancelAnimationFrame(animationFrameId.current);
-    //         }
-    //     };
-    // }, [drawCanvas]);
-
+        requestAnimationFrame(drawCanvas);
+    }, [drawCanvas]);
 
     return (
         <>
