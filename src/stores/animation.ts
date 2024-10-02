@@ -6,7 +6,11 @@ export function requestAnimation(duration: number) {
     $animationRequests.set([...$animationRequests.get(), duration]);
 }
 export function processRequests(time: number) {
+    const requests = $animationRequests.get();
+    if (requests.length === 0) {
+        return;
+    }
     $animationDeadline.set(Math.max($animationDeadline.get(),
-        ...$animationRequests.get().map(duration => time + duration)))
+        ...requests.map(duration => time + duration)))
     $animationRequests.set([]);
 }

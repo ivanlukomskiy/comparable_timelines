@@ -2,13 +2,16 @@ import React, {useCallback, useEffect, useRef} from 'react';
 import {renderTimeAxis} from "../time-axis/TimeAxis.tsx";
 import {$timelineRect} from "../../stores/store.ts";
 import {updateViewport} from "../../stores/viewport.ts";
-import {$animationDeadline} from "../../stores/animation.ts";
+import {$animationDeadline, $animationRequests, processRequests} from "../../stores/animation.ts";
+import {useZoom} from "../../hooks/useZoom.ts";
 
 
 const Canvas: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
+    useZoom({canvasRef});
 
     const drawCanvas = useCallback((animationTimestamp: number) => {
+        processRequests(animationTimestamp);
         const canvas = canvasRef.current;
         if (!canvas) {
             return;
@@ -25,6 +28,11 @@ const Canvas: React.FC = () => {
         }
     }, []);
 
+    useEffect(() => {
+        $animationRequests.subscribe(() => {
+            requestAnimationFrame(drawCanvas)
+        });
+    }, []);
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -57,10 +65,6 @@ const Canvas: React.FC = () => {
         return () => {
             window.removeEventListener('resize', resizeCanvas);
         };
-    }, [drawCanvas]);
-
-    useEffect(() => {
-        requestAnimationFrame(drawCanvas);
     }, [drawCanvas]);
 
     return (
