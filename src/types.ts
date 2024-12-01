@@ -15,6 +15,7 @@ export interface Point {
 
 export function mouseToTime(x: number, timelineRect: Rect, viewPort: ViewPort): DateTime | null {
     // const rect = canvas.getBoundingClientRect();
+    console.log("x", x, timelineRect.x, timelineRect.x + timelineRect.width)
     if (x < timelineRect.x || x > timelineRect.x + timelineRect.width) {
         return null;
     }

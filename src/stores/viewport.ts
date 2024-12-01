@@ -13,45 +13,57 @@ export const $viewport = atom<ViewPort>(INITIAL_VIEWPORT);
 const $viewportState = atom<ViewPortState>({
     startViewPort: INITIAL_VIEWPORT,
     startTime: 0,
-    zoomPanEndTime: 0,
+    endTime: 0,
+    targetViewPort: INITIAL_VIEWPORT,
 });
-const $zoomPanRequest = atom<ZoomPanRequest | null>(null);
+interface ViewportRequest {
+    target: ViewPort;
+    durationMillis: number;
+}
+const $viewportRequest = atom<ViewportRequest | null>(null);
 export interface ViewPort {
     readonly min: DateTime;
     readonly max: DateTime;
 }
-interface ZoomPanRequest {
-    zoomSpeed?: number;
-    zoomPivot?: DateTime;
-    panSpeed?: number;
-}
 interface ViewPortState {
     startViewPort: ViewPort;
     startTime: number;
-    zoomPan?: ZoomPanRequest;
-    zoomPanEndTime: number;
+    targetViewPort: ViewPort;
+    endTime: number;
+}
+function transition(start: DateTime, end: DateTime, phase: number): DateTime {
+    if (phase >= 1) {
+        return end;
+    }
+    if (phase <= 0) {
+        return start;
+    }
+    const diff = end.diff(start).mapUnits(x => x * phase);
+    return start.plus(diff)
 }
 export function updateViewport(time: number) {
     const state = $viewportState.get();
     let res = state.startViewPort;
-    if (state.zoomPan) {
-        const zoomPan = state.zoomPan;
-        const timeDelta = Math.min(time, state.zoomPanEndTime) - state.startTime;
-        if (zoomPan.zoomSpeed && zoomPan.zoomPivot) {
-            res = applyZoom(res, zoomPan.zoomPivot, zoomPan.zoomSpeed * timeDelta)
-        } else if (zoomPan.panSpeed) {
-            res = applyPan(res, zoomPan.panSpeed * timeDelta)
+    if (state.targetViewPort) {
+        let phase = 1.;
+        if (state.endTime > state.startTime) {
+            phase = (Math.min(time, state.endTime) - state.startTime) / (state.endTime - state.startTime)
+        }
+        res = {
+            min: transition(state.startViewPort.min, state.targetViewPort.min, phase),
+            max: transition(state.startViewPort.max, state.targetViewPort.max, phase),
         }
         $viewport.set(res)
     }
-    const zoomPanRequest = $zoomPanRequest.get();
-    if (zoomPanRequest) {
+    const viewportRequest = $viewportRequest.get();
+    if (viewportRequest) {
         $viewportState.set({
             startViewPort: res,
             startTime: time,
-            zoomPan: zoomPanRequest,
-            zoomPanEndTime: time + zoomPanTimeoutMillis,
-        })
+            targetViewPort: viewportRequest.target,
+            endTime: time + viewportRequest.durationMillis,
+        });
+        $viewportRequest.set(null);
     }
 }
 
@@ -74,11 +86,13 @@ function applyZoom(v: ViewPort, pivot: DateTime, zoom: number): ViewPort {
         max: pivot.plus(Duration.fromMillis(newWindow.as("milliseconds") * (1 - fraction))),
     }
 }
-export function setZoomSpeed(zoomPivot: DateTime, zoomSpeed: number) {
-    $zoomPanRequest.set({zoomPivot, zoomSpeed})
+export function startZoom(pivot: DateTime, zoom: number) {
+    const target = applyZoom($viewportState.get().targetViewPort, pivot, zoom);
+    $viewportRequest.set({durationMillis: zoomPanTimeoutMillis, target})
     requestAnimation(zoomPanTimeoutMillis)
 }
-export function setPanSpeed(panSpeed: number) {
-    $zoomPanRequest.set({panSpeed})
+export function startPan(pan: number) {
+    const target = applyPan($viewportState.get().targetViewPort, pan)
+    $viewportRequest.set({durationMillis: zoomPanTimeoutMillis, target})
     requestAnimation(zoomPanTimeoutMillis)
 }

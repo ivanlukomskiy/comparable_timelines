@@ -8,8 +8,8 @@ function determineTimeUnits(viewPort: ViewPort): TimeUnit[] {
     const diff = viewPortDuration(viewPort);
     const diffInYears = diff.as('years');
 
-    if (diffInYears > 500) return ['century'];
-    if (diffInYears >= 100) return ['century', 'year'];
+    // if (diffInYears > 500) return ['century'];
+    // if (diffInYears >= 100) return ['century', 'year'];
     if (diffInYears > 20) return ['year'];
     if (diffInYears >= 1) return ['year', 'month'];
     if (diff.as('days') > 90) return ['year', 'month'];
