@@ -19,7 +19,7 @@ export function useZoom({canvasRef}: UseViewPortProps) {
         const handleWheel = (e: WheelEvent) => {
             console.log('wheeling')
             e.preventDefault();
-            const pivot = mouseToTime(e.offsetX, $timelineRect.get(), $viewport.get());
+            const pivot = mouseToTime(e.offsetX * devicePixelRatio, $timelineRect.get(), $viewport.get());
             if (!pivot) {
                 return;
             }
