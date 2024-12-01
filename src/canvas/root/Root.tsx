@@ -1,9 +1,11 @@
 import React, {useCallback, useEffect, useRef} from 'react';
-import {renderTimeAxis} from "../time-axis/TimeAxis.tsx";
+import {renderTimeAxis} from "../time-axis/TimeAxis.ts";
 import {$timelineRect} from "../../stores/store.ts";
 import {updateViewport} from "../../stores/viewport.ts";
 import {$animationDeadline, $animationRequests, processRequests} from "../../stores/animation.ts";
 import {useZoom} from "../../hooks/useZoom.ts";
+import {renderFpsMeter} from "../fpsMeter/fpsMeter.ts";
+import {onRendered} from "../../stores/debug.ts";
 
 
 const Canvas: React.FC = () => {
@@ -23,6 +25,9 @@ const Canvas: React.FC = () => {
         updateViewport(animationTimestamp)
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         renderTimeAxis(ctx);
+        renderFpsMeter(180, 100, ctx);
+
+        onRendered();
         if (animationTimestamp <= $animationDeadline.get()) {
             requestAnimationFrame(drawCanvas);
         }
@@ -53,7 +58,7 @@ const Canvas: React.FC = () => {
             canvas.style.height = `${innerHeight}px`;
             $timelineRect.set({
                 x: 150,
-                y: 0,
+                y: 100,
                 width: innerWidth * ratio - 300,
                 height: innerHeight * ratio / 10,
             })

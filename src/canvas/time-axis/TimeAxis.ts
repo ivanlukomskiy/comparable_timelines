@@ -22,7 +22,6 @@ function determineTimeUnits(viewPort: ViewPort): TimeUnit[] {
 const NOTCH_HEIGHT_SECONDARY = 10;
 const NOTCH_HEIGHT_PRIMARY = 20;
 const TEXT_HEIGHT_OFFSET = 40;
-let renders = 0;
 
 export function drawNotch(ctx: CanvasRenderingContext2D, x: number, y: number, primary: boolean, text?: string) {
     ctx.beginPath();
@@ -68,7 +67,6 @@ export function renderTimeAxis(ctx: CanvasRenderingContext2D) {
     ctx.moveTo(rect.x, rect.y+rect.height/2);
     ctx.lineTo(rect.x+rect.width, rect.y+rect.height/2);
     ctx.stroke();
-    let iters = 0
     units.forEach((unit, index) => {
         const isMainUnit = index === 0;
         const fontSize = isMainUnit ? 14 : 10;
@@ -83,9 +81,6 @@ export function renderTimeAxis(ctx: CanvasRenderingContext2D) {
                 drawNotch(ctx, x, rect.y+rect.height/2, isMainUnit, isMainUnit ? formatTime(current, unit) : undefined);
             }
             current = current.plus({ [unit]: 1 });
-            iters++
         }
     });
-    renders++
-    console.log("renders", renders, iters)
 }

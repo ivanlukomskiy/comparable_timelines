@@ -4,7 +4,7 @@ import {Rect} from "../types.ts";
 
 const INITIAL_TIMELINE_RECT = {
     x: 100,
-    y: 100,
+    y: 300,
     width: 300,
     height: 40,
 };
