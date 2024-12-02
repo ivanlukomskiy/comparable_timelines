@@ -89,10 +89,10 @@ function applyZoom(v: ViewPort, pivot: DateTime, zoom: number): ViewPort {
 export function startZoom(pivot: DateTime, zoom: number) {
     const target = applyZoom($viewportState.get().targetViewPort, pivot, zoom);
     $viewportRequest.set({durationMillis: zoomPanTimeoutMillis, target})
-    requestAnimation(zoomPanTimeoutMillis)
+    requestAnimation('zoom', zoomPanTimeoutMillis)
 }
 export function startPan(pan: number) {
     const target = applyPan($viewportState.get().targetViewPort, pan)
     $viewportRequest.set({durationMillis: zoomPanTimeoutMillis, target})
-    requestAnimation(zoomPanTimeoutMillis)
+    requestAnimation('zoom', zoomPanTimeoutMillis)
 }
