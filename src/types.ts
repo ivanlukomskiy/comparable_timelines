@@ -14,8 +14,6 @@ export interface Point {
 }
 
 export function mouseToTime(x: number, timelineRect: Rect, viewPort: ViewPort): DateTime | null {
-    // const rect = canvas.getBoundingClientRect();
-    console.log("x", x, timelineRect.x, timelineRect.x + timelineRect.width)
     if (x < timelineRect.x || x > timelineRect.x + timelineRect.width) {
         return null;
     }
@@ -24,4 +22,11 @@ export function mouseToTime(x: number, timelineRect: Rect, viewPort: ViewPort): 
 
     const offset = diff.mapUnits(unit => unit * fraction);
     return viewPort.min.plus(offset);
+}
+
+export function timeToX(time: DateTime, timelineRect: Rect, viewPort: ViewPort): number | null {
+    const diff = viewPortDuration(viewPort);
+    const diffMouse = time.diff(viewPort.min);
+    const fraction = diffMouse.valueOf() / diff.valueOf();
+    return timelineRect.width * fraction + timelineRect.x;
 }

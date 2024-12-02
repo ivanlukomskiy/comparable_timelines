@@ -6,11 +6,14 @@ import {$animationDeadline, $animationRequests, processRequests} from "../../sto
 import {useZoom} from "../../hooks/useZoom.ts";
 import {renderFpsMeter} from "../fpsMeter/fpsMeter.ts";
 import {onRendered} from "../../stores/debug.ts";
+import {useMouse} from "../../hooks/useMouse.ts";
+import {renderMarker} from "../marker/marker.ts";
 
 
 const Canvas: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
     useZoom({canvasRef});
+    useMouse({canvasRef});
 
     const drawCanvas = useCallback((animationTimestamp: number) => {
         processRequests(animationTimestamp);
@@ -26,6 +29,7 @@ const Canvas: React.FC = () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         renderTimeAxis(ctx);
         renderFpsMeter(180, 100, ctx);
+        renderMarker(ctx);
 
         onRendered();
         if (animationTimestamp <= $animationDeadline.get()) {
