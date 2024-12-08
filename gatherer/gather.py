@@ -54,12 +54,14 @@ if __name__ == '__main__':
         events_src = yaml.safe_load(events_yaml)['events']
         events = []
         for event in events_src:
-            events.append({
+            e = {
                 'title': event['title'],
                 'timeStart': str(event.get('timeStart')),
-                'timeEnd': str(event.get('timeEnd')),
                 'precision': str(event.get('precision')),
-            })
+            }
+            if 'timeEnd' in event:
+                e['timeEnd'] = str(event.get('timeEnd'))
+            events.append(e)
         exploration[period['title']] = events
 
     with open("exploration.json", "w") as json_file:
