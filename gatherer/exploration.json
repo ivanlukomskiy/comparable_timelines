@@ -1,508 +1,705 @@
 {
-    "Great Maritime Discoveries": [
+    "Ancient Maritime Exploration": [
         {
-            "title": "Discovery of Madeira",
-            "timeStart": "1419-01-01T00:00:00Z",
-            "precision": "year"
+            "title": "Phoenician Maritime Dominance",
+            "timeStart": "1200-01-01T00:00:00",
+            "precision": "century",
+            "timeEnd": "600-01-01T00:00:00"
         },
         {
-            "title": "First voyage of Columbus to the Americas",
-            "timeStart": "1492-08-03T00:00:00Z",
-            "precision": "day",
-            "timeEnd": "1493-03-15T00:00:00Z"
+            "title": "Hanno the Navigator's Voyage",
+            "timeStart": "500-01-01T00:00:00",
+            "precision": "10year"
         },
         {
-            "title": "Discovery of the Pacific Ocean by Balboa",
-            "timeStart": "1513-09-25T00:00:00Z",
-            "precision": "day"
+            "title": "Pytheas's Exploration of the North",
+            "timeStart": "325-01-01T00:00:00",
+            "precision": "10year",
+            "timeEnd": "320-01-01T00:00:00"
         },
         {
-            "title": "Magellan's circumnavigation of the globe",
-            "timeStart": "1519-09-20T00:00:00Z",
-            "precision": "day",
-            "timeEnd": "1522-09-06T00:00:00Z"
-        },
-        {
-            "title": "Spanish conquest of the Aztec Empire",
-            "timeStart": "1519-02-18T00:00:00Z",
-            "precision": "day",
-            "timeEnd": "1521-08-13T00:00:00Z"
-        },
-        {
-            "title": "Spanish conquest of the Inca Empire",
-            "timeStart": "1532-11-15T00:00:00Z",
-            "precision": "day",
-            "timeEnd": "1533-07-15T00:00:00Z"
-        },
-        {
-            "title": "The first European to explore the coast of California",
-            "timeStart": "1542-06-01T00:00:00Z",
-            "precision": "month"
-        },
-        {
-            "title": "The founding of St. Augustine in Florida",
-            "timeStart": "1565-09-08T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "Dutch exploration of the East Indies",
-            "timeStart": "1602-01-01T00:00:00Z",
-            "precision": "year"
-        }
-    ],
-    "Arctic Exploration": [
-        {
-            "title": "First recorded Arctic exploration by the Norse",
-            "timeStart": "980-01-01T00:00:00Z",
+            "title": "Himilco's Voyage to Northern Europe",
+            "timeStart": "400-01-01T00:00:00",
             "precision": "century"
         },
         {
-            "title": "Martin Waldseem\u00fcller publishes map showing hypothetical northern land",
-            "timeStart": "1507-01-01T00:00:00Z",
-            "precision": "year"
+            "title": "Greek Colonization Period",
+            "timeStart": "800-01-01T00:00:00",
+            "precision": "century",
+            "timeEnd": "500-01-01T00:00:00"
         },
         {
-            "title": "John Cabot's expedition to find a northwest passage",
-            "timeStart": "1497-01-01T00:00:00Z",
-            "precision": "year"
+            "title": "First Possible Circumnavigation of Africa by Phoenicians",
+            "timeStart": "600-01-01T00:00:00",
+            "precision": "10year"
         },
         {
-            "title": "Search for the Northwest Passage by Sebastian Cabot",
-            "timeStart": "1508-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1508-12-31T00:00:00Z"
-        },
-        {
-            "title": "Frobisher's first voyage to search for the Northwest Passage",
-            "timeStart": "1576-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1576-12-31T00:00:00Z"
-        },
-        {
-            "title": "Henry Hudson's exploration of the Hudson River",
-            "timeStart": "1609-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Danish explorer Vitus Bering's expedition to the Arctic",
-            "timeStart": "1725-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1730-12-31T00:00:00Z"
-        },
-        {
-            "title": "James Cook's second voyage to the Pacific and Arctic",
-            "timeStart": "1772-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1775-12-31T00:00:00Z"
-        },
-        {
-            "title": "Sir John Franklin's first expedition to discover the Northwest Passage",
-            "timeStart": "1845-05-19T00:00:00Z",
-            "precision": "month",
-            "timeEnd": "1848-01-01T00:00:00Z"
-        },
-        {
-            "title": "George Nares explores the Arctic as part of the British Arctic Expedition",
-            "timeStart": "1875-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1876-12-31T00:00:00Z"
-        },
-        {
-            "title": "Roald Amundsen's successful navigation of the Northwest Passage",
-            "timeStart": "1903-06-01T00:00:00Z",
-            "precision": "month",
-            "timeEnd": "1906-08-01T00:00:00Z"
-        },
-        {
-            "title": "Richard Byrd's first flight over the North Pole",
-            "timeStart": "1926-05-09T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "First Soviet Arctic expedition to the North Pole",
-            "timeStart": "1937-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1938-01-01T00:00:00Z"
-        },
-        {
-            "title": "First successful overland traverse of the Arctic by the Soviet Union",
-            "timeStart": "1948-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1952-12-31T00:00:00Z"
+            "title": "Roman Republic Naval Expeditions",
+            "timeStart": "264-01-01T00:00:00",
+            "precision": "10year",
+            "timeEnd": "146-01-01T00:00:00"
         }
     ],
-    "Land Exploration (Asia and Beyond)": [
+    "Silk Road and Asian Exploration": [
         {
-            "title": "The Mongol Empire Expansion",
-            "timeStart": "1206-01-01T00:00:00Z",
-            "precision": "century",
-            "timeEnd": "1368-01-01T00:00:00Z"
+            "title": "Zhang Qian's Expedition",
+            "timeStart": "0139-01-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "0126-01-01T00:00:00Z"
         },
         {
-            "title": "The Travels of Marco Polo",
+            "title": "Han Dynasty Establishes Silk Road",
+            "timeStart": "0141-01-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "0087-01-01T00:00:00Z"
+        },
+        {
+            "title": "Faxian's Voyage to India",
+            "timeStart": "0399-01-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "0412-01-01T00:00:00Z"
+        },
+        {
+            "title": "Xuanzang's Journey to India",
+            "timeStart": "0629-01-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "0645-01-01T00:00:00Z"
+        },
+        {
+            "title": "Marco Polo's Journey",
             "timeStart": "1271-01-01T00:00:00Z",
             "precision": "year",
             "timeEnd": "1295-01-01T00:00:00Z"
         },
         {
-            "title": "The Ming Dynasty's Maritime Expeditions",
-            "timeStart": "1405-01-01T00:00:00Z",
+            "title": "Ibn Battuta's Travels",
+            "timeStart": "1325-10-01T00:00:00Z",
             "precision": "year",
-            "timeEnd": "1433-01-01T00:00:00Z"
+            "timeEnd": "1354-01-01T00:00:00Z"
         },
         {
-            "title": "Vasco da Gama's Voyage to India",
-            "timeStart": "1497-05-20T00:00:00Z",
+            "title": "Zheng He's Expeditions",
+            "timeStart": "1405-07-11T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1433-04-30T00:00:00Z"
+        }
+    ],
+    "Norse and Viking Exploration": [
+        {
+            "title": "Lindisfarne Raid",
+            "timeStart": "0793-06-08T00:00:00Z",
             "precision": "day"
         },
         {
-            "title": "Ferdinand Magellan's Circumnavigation",
-            "timeStart": "1519-09-20T00:00:00Z",
+            "title": "First Viking Assault on Paris",
+            "timeStart": "0845-03-28T00:00:00Z",
+            "precision": "day"
+        },
+        {
+            "title": "Viking Settlement in Dublin",
+            "timeStart": "0840-01-01T00:00:00Z",
+            "precision": "10year",
+            "timeEnd": "0870-12-31T23:59:59Z"
+        },
+        {
+            "title": "Kingdom of York (Yorvik) Established",
+            "timeStart": "0875-01-01T00:00:00Z",
+            "precision": "10year",
+            "timeEnd": "0954-12-31T23:59:59Z"
+        },
+        {
+            "title": "Norse Settlement in Iceland",
+            "timeStart": "0874-01-01T00:00:00Z",
+            "precision": "10year",
+            "timeEnd": "0930-12-31T23:59:59Z"
+        },
+        {
+            "title": "Greenland Discovered by Erik the Red",
+            "timeStart": "0985-01-01T00:00:00Z",
             "precision": "year",
+            "timeEnd": "0986-12-31T23:59:59Z"
+        },
+        {
+            "title": "Leif Erikson's Voyage to Vinland",
+            "timeStart": "1000-01-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1001-12-31T23:59:59Z"
+        },
+        {
+            "title": "Viking Siege of Canterbury",
+            "timeStart": "1011-09-08T00:00:00Z",
+            "precision": "day"
+        },
+        {
+            "title": "End of Norse Age with Battle of Stamford Bridge",
+            "timeStart": "1066-09-25T00:00:00Z",
+            "precision": "day"
+        }
+    ],
+    "Medieval Arab Exploration": [
+        {
+            "title": "Ibn Battuta's Travels",
+            "timeStart": "1325-06-14T00:00:00",
+            "precision": "year",
+            "timeEnd": "1354-01-01T00:00:00"
+        },
+        {
+            "title": "Al-Masudi's Journey to India and East Africa",
+            "timeStart": "916-01-01T00:00:00",
+            "precision": "year",
+            "timeEnd": "920-01-01T00:00:00"
+        },
+        {
+            "title": "Ahmad ibn Fadlan's Journey to the Volga Bulgars",
+            "timeStart": "921-01-01T00:00:00",
+            "precision": "year",
+            "timeEnd": "923-01-01T00:00:00"
+        },
+        {
+            "title": "Al-Idrisi's Geographical Compilation for King Roger II of Sicily",
+            "timeStart": "1138-01-01T00:00:00",
+            "precision": "year",
+            "timeEnd": "1154-01-01T00:00:00"
+        },
+        {
+            "title": "Yaqut al-Hamawi's Compilation of Geographical Dictionary",
+            "timeStart": "1213-01-01T00:00:00",
+            "precision": "year",
+            "timeEnd": "1224-01-01T00:00:00"
+        },
+        {
+            "title": "Suleiman al-Tajir's Voyage to India",
+            "timeStart": "850-01-01T00:00:00",
+            "precision": "year",
+            "timeEnd": "851-01-01T00:00:00"
+        }
+    ],
+    "European Age of Discovery": [
+        {
+            "title": "Prince Henry the Navigator sponsors exploration along the West African coast",
+            "timeStart": "1419-01-01T00:00:00Z",
+            "precision": "10year",
+            "timeEnd": "1460-11-13T00:00:00Z"
+        },
+        {
+            "title": "Bartolomeu Dias rounds the Cape of Good Hope",
+            "timeStart": "1488-01-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1488-12-31T00:00:00Z"
+        },
+        {
+            "title": "Christopher Columbus's first voyage",
+            "timeStart": "1492-08-03T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1493-03-15T00:00:00Z"
+        },
+        {
+            "title": "Vasco da Gama's voyage to India",
+            "timeStart": "1497-07-08T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1499-07-10T00:00:00Z"
+        },
+        {
+            "title": "John Cabot discovers parts of North America",
+            "timeStart": "1497-05-02T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1497-08-06T00:00:00Z"
+        },
+        {
+            "title": "Amerigo Vespucci's voyage to South America",
+            "timeStart": "1499-05-01T00:00:00Z",
+            "precision": "month",
+            "timeEnd": "1500-06-30T00:00:00Z"
+        },
+        {
+            "title": "Ferdinand Magellan's circumnavigation of the globe",
+            "timeStart": "1519-09-20T00:00:00Z",
+            "precision": "day",
             "timeEnd": "1522-09-06T00:00:00Z"
         },
         {
-            "title": "The Spanish Conquest of the Aztec Empire",
-            "timeStart": "1519-01-01T00:00:00Z",
-            "precision": "year",
+            "title": "Hern\u00e1n Cort\u00e9s's conquest of the Aztec Empire",
+            "timeStart": "1519-02-18T00:00:00Z",
+            "precision": "day",
             "timeEnd": "1521-08-13T00:00:00Z"
         },
         {
-            "title": "The Age of Discovery Reaches Asia",
-            "timeStart": "1550-01-01T00:00:00Z",
-            "precision": "10year",
-            "timeEnd": "1600-01-01T00:00:00Z"
+            "title": "Francisco Pizarro's conquest of the Incan Empire",
+            "timeStart": "1532-11-16T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1533-06-26T00:00:00Z"
         },
         {
-            "title": "Dutch East India Company Founded",
-            "timeStart": "1602-01-01T00:00:00Z",
-            "precision": "year"
+            "title": "Jacques Cartier's exploration of the St. Lawrence River",
+            "timeStart": "1534-04-20T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1534-09-05T00:00:00Z"
+        },
+        {
+            "title": "Sir Francis Drake's circumnavigation of the globe",
+            "timeStart": "1577-12-13T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1580-09-26T00:00:00Z"
+        },
+        {
+            "title": "Henry Hudson's exploration of the Hudson River",
+            "timeStart": "1609-09-03T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1609-09-12T00:00:00Z"
+        },
+        {
+            "title": "Abel Tasman's voyages to Australia and New Zealand",
+            "timeStart": "1642-08-14T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1644-07-22T00:00:00Z"
         }
     ],
-    "African Exploration": [
+    "Exploration of the Americas": [
         {
-            "title": "Portuguese Exploration of Africa Begins",
-            "timeStart": "1419-01-01T00:00:00Z",
-            "precision": "century"
+            "title": "Columbus' First Voyage",
+            "timeStart": "1492-08-03 00:00:00",
+            "precision": "day",
+            "timeEnd": "1493-03-15 00:00:00"
         },
         {
-            "title": "Discovery of the Azores Islands",
-            "timeStart": "1427-07-01T00:00:00Z",
-            "precision": "month"
+            "title": "Treaty of Tordesillas",
+            "timeStart": "1494-06-07 00:00:00",
+            "precision": "day"
         },
         {
-            "title": "Bartolomeu Dias Rounds the Cape of Good Hope",
-            "timeStart": "1488-05-01T00:00:00Z",
-            "precision": "month"
+            "title": "Voyage of John Cabot",
+            "timeStart": "1497-05-02 00:00:00",
+            "precision": "day",
+            "timeEnd": "1497-08-06 00:00:00"
         },
         {
-            "title": "Vasco da Gama's Voyage to India via the Cape",
-            "timeStart": "1497-07-01T00:00:00Z",
-            "precision": "month"
+            "title": "Discovery of Brazil by Pedro \u00c1lvares Cabral",
+            "timeStart": "1500-04-22 00:00:00",
+            "precision": "day"
         },
         {
-            "title": "Portuguese Establish Trading Posts on the West African Coast",
-            "timeStart": "1500-01-01T00:00:00Z",
-            "precision": "century",
-            "timeEnd": "1599-12-31T00:00:00Z"
+            "title": "Amerigo Vespucci's Voyage",
+            "timeStart": "1501-05-13 00:00:00",
+            "precision": "day",
+            "timeEnd": "1502-07-22 00:00:00"
         },
         {
-            "title": "Foundation of S\u00e3o Jorge da Mina (Elmina Castle)",
-            "timeStart": "1482-01-01T00:00:00Z",
-            "precision": "year"
+            "title": "Hern\u00e1n Cort\u00e9s' Conquest of the Aztec Empire",
+            "timeStart": "1519-02-18 00:00:00",
+            "precision": "day",
+            "timeEnd": "1521-08-13 00:00:00"
         },
         {
-            "title": "Establishment of the Dutch West India Company",
-            "timeStart": "1621-01-01T00:00:00Z",
-            "precision": "year"
+            "title": "Ferdinand Magellan's Circumnavigation",
+            "timeStart": "1519-09-20 00:00:00",
+            "precision": "day",
+            "timeEnd": "1522-09-06 00:00:00"
         },
         {
-            "title": "The Transatlantic Slave Trade Increases",
-            "timeStart": "1600-01-01T00:00:00Z",
-            "precision": "century",
-            "timeEnd": "1699-12-31T00:00:00Z"
+            "title": "Francisco Pizarro's Conquest of the Incan Empire",
+            "timeStart": "1531-01-01 00:00:00",
+            "precision": "year",
+            "timeEnd": "1533-11-16 00:00:00"
         },
         {
-            "title": "Explorations by the English along the African Coast",
-            "timeStart": "1570-01-01T00:00:00Z",
-            "precision": "century",
-            "timeEnd": "1600-12-31T00:00:00Z"
+            "title": "Jacques Cartier's Exploration of Canada",
+            "timeStart": "1534-04-20 00:00:00",
+            "precision": "10year",
+            "timeEnd": "1542-09-01 00:00:00"
         },
         {
-            "title": "Rise of the Omani Empire in East Africa",
-            "timeStart": "1650-01-01T00:00:00Z",
-            "precision": "century",
-            "timeEnd": "1700-12-31T00:00:00Z"
+            "title": "Henry Hudson's Exploration of North America",
+            "timeStart": "1607-01-01 00:00:00",
+            "precision": "10year",
+            "timeEnd": "1611-01-01 00:00:00"
+        },
+        {
+            "title": "Pilgrims' Landing at Plymouth",
+            "timeStart": "1620-12-21 00:00:00",
+            "precision": "day"
+        }
+    ],
+    "Polar Exploration": [
+        {
+            "title": "Willem Barentsz's First Arctic Voyage",
+            "timeStart": "1594-06-05T00:00:00",
+            "precision": "day",
+            "timeEnd": "1594-11-29T00:00:00"
+        },
+        {
+            "title": "Willem Barentsz's Second Arctic Voyage",
+            "timeStart": "1595-06-02T00:00:00",
+            "precision": "day",
+            "timeEnd": "1595-11-17T00:00:00"
+        },
+        {
+            "title": "Willem Barentsz's Third Arctic Voyage",
+            "timeStart": "1596-05-10T00:00:00",
+            "precision": "month",
+            "timeEnd": "1597-06-01T00:00:00"
+        },
+        {
+            "title": "Hudson's Attempt to Find a Polar Sea Route",
+            "timeStart": "1607-05-01T00:00:00",
+            "precision": "month",
+            "timeEnd": "1607-09-15T00:00:00"
+        },
+        {
+            "title": "Bering's First Kamchatka Expedition",
+            "timeStart": "1728-02-13T00:00:00",
+            "precision": "year",
+            "timeEnd": "1730-12-01T00:00:00"
+        },
+        {
+            "title": "James Cook's First Voyage to the Antarctic Circle",
+            "timeStart": "1772-07-13T00:00:00",
+            "precision": "year",
+            "timeEnd": "1775-07-30T00:00:00"
+        },
+        {
+            "title": "Fabian von Bellingshausen's Antarctic Expedition",
+            "timeStart": "1819-11-16T00:00:00",
+            "precision": "year",
+            "timeEnd": "1821-08-04T00:00:00"
+        },
+        {
+            "title": "John Franklin's Lost Arctic Expedition",
+            "timeStart": "1845-05-19T00:00:00",
+            "precision": "day"
+        },
+        {
+            "title": "Fridtjof Nansen's Fram Expedition",
+            "timeStart": "1893-06-24T00:00:00",
+            "precision": "year",
+            "timeEnd": "1896-08-13T00:00:00"
+        },
+        {
+            "title": "Roald Amundsen Reaches the South Pole",
+            "timeStart": "1911-12-14T00:00:00",
+            "precision": "day"
         }
     ],
     "Pacific Exploration": [
         {
-            "title": "Ferdinand Magellan's Expedition",
-            "timeStart": "1519-09-20T00:00:00Z",
+            "title": "Magellan's Circumnavigation",
+            "timeStart": "1519-09-20T00:00:00",
             "precision": "day",
-            "timeEnd": "1522-09-06T00:00:00Z"
+            "timeEnd": "1522-09-06T00:00:00"
         },
         {
-            "title": "Spanish Exploration of the Pacific Islands",
-            "timeStart": "1525-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Discovery of the Solomon Islands",
-            "timeStart": "1568-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Abel Tasman's Voyage to New Zealand",
-            "timeStart": "1642-08-13T00:00:00Z",
+            "title": "First Voyage of Abel Tasman",
+            "timeStart": "1642-08-14T00:00:00",
             "precision": "day",
-            "timeEnd": "1643-02-05T00:00:00Z"
+            "timeEnd": "1643-06-15T00:00:00"
         },
         {
             "title": "James Cook's First Voyage",
-            "timeStart": "1768-08-26T00:00:00Z",
+            "timeStart": "1768-08-26T00:00:00",
             "precision": "day",
-            "timeEnd": "1771-07-30T00:00:00Z"
+            "timeEnd": "1771-07-12T00:00:00"
         },
         {
             "title": "James Cook's Second Voyage",
-            "timeStart": "1772-07-13T00:00:00Z",
+            "timeStart": "1772-07-13T00:00:00",
             "precision": "day",
-            "timeEnd": "1775-07-30T00:00:00Z"
+            "timeEnd": "1775-07-30T00:00:00"
         },
         {
             "title": "James Cook's Third Voyage",
-            "timeStart": "1776-07-12T00:00:00Z",
+            "timeStart": "1776-07-12T00:00:00",
             "precision": "day",
-            "timeEnd": "1779-02-14T00:00:00Z"
+            "timeEnd": "1779-02-14T00:00:00"
         },
         {
-            "title": "Establishment of the British Colony in New South Wales",
-            "timeStart": "1788-01-26T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "Exploration of Hawaii by Captain Cook",
-            "timeStart": "1778-01-18T00:00:00Z",
+            "title": "Voyage of Jean-Fran\u00e7ois de La P\u00e9rouse",
+            "timeStart": "1785-08-01T00:00:00",
             "precision": "day",
-            "timeEnd": "1779-02-14T00:00:00Z"
+            "timeEnd": "1788-03-10T00:00:00"
         }
     ],
-    "Antarctic Exploration": [
+    "African Exploration": [
         {
-            "title": "First recorded sighting of Antarctica",
-            "timeStart": "1820-01-01T00:00:00Z",
+            "title": "James Bruce's Exploration of the Blue Nile",
+            "timeStart": "1768-11-01T00:00:00",
+            "precision": "month",
+            "timeEnd": "1773-10-01T00:00:00"
+        },
+        {
+            "title": "Mungo Park's First Voyage",
+            "timeStart": "1795-06-23T00:00:00",
+            "precision": "day",
+            "timeEnd": "1797-12-24T00:00:00"
+        },
+        {
+            "title": "Mungo Park's Second Voyage",
+            "timeStart": "1805-05-20T00:00:00",
+            "precision": "month",
+            "timeEnd": "1806-11-01T00:00:00"
+        },
+        {
+            "title": "Ren\u00e9 Cailli\u00e9's Journey to Timbuktu",
+            "timeStart": "1827-03-01T00:00:00",
+            "precision": "month",
+            "timeEnd": "1828-08-01T00:00:00"
+        },
+        {
+            "title": "Richard Burton and John Speke's Exploration to Find the Source of the Nile",
+            "timeStart": "1857-06-01T00:00:00",
+            "precision": "month",
+            "timeEnd": "1859-02-01T00:00:00"
+        },
+        {
+            "title": "David Livingstone's Zambezi Expedition",
+            "timeStart": "1858-03-01T00:00:00",
+            "precision": "month",
+            "timeEnd": "1864-07-01T00:00:00"
+        },
+        {
+            "title": "John Hanning Speke's Discovery of Lake Victoria",
+            "timeStart": "1858-08-03T00:00:00",
             "precision": "day"
         },
         {
-            "title": "The first expedition to set foot on Antarctica",
-            "timeStart": "1895-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1896-12-31T00:00:00Z"
+            "title": "Henry Morton Stanley's Search for and Finding of David Livingstone",
+            "timeStart": "1871-03-21T00:00:00",
+            "precision": "day",
+            "timeEnd": "1871-11-10T00:00:00"
         },
         {
-            "title": "The Discovery Expedition led by Robert Falcon Scott",
-            "timeStart": "1901-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1904-12-31T00:00:00Z"
+            "title": "Henry Morton Stanley's Exploration of the Congo River",
+            "timeStart": "1874-11-12T00:00:00",
+            "precision": "day",
+            "timeEnd": "1877-08-09T00:00:00"
         },
         {
-            "title": "First ascent of Mount Vinson by the U.S. team",
-            "timeStart": "1966-12-18T00:00:00Z",
+            "title": "Pierre Savorgnan de Brazza's Expeditions in the Congo",
+            "timeStart": "1875-05-01T00:00:00",
+            "precision": "month",
+            "timeEnd": "1880-11-01T00:00:00"
+        },
+        {
+            "title": "Mary Kingsley's Travels in West Africa",
+            "timeStart": "1893-06-17T00:00:00",
+            "precision": "month",
+            "timeEnd": "1895-09-01T00:00:00"
+        }
+    ],
+    "Siberian and Asian Land Conquest": [
+        {
+            "title": "Yermak's Conquest of Siberia",
+            "timeStart": "1581-01-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1585-01-01T00:00:00Z"
+        },
+        {
+            "title": "Founding of Tomsk",
+            "timeStart": "1604-01-01T00:00:00Z",
+            "precision": "year"
+        },
+        {
+            "title": "Russian Consolidation of Control over Siberia",
+            "timeStart": "1601-01-01T00:00:00Z",
+            "precision": "century",
+            "timeEnd": "1700-01-01T00:00:00Z"
+        },
+        {
+            "title": "Founding of Yakutsk",
+            "timeStart": "1632-01-01T00:00:00Z",
+            "precision": "year"
+        },
+        {
+            "title": "Vitus Bering's First Expedition",
+            "timeStart": "1725-01-01T00:00:00Z",
+            "precision": "10year",
+            "timeEnd": "1730-01-01T00:00:00Z"
+        },
+        {
+            "title": "Vitus Bering's Second Kamchatka Expedition",
+            "timeStart": "1733-01-01T00:00:00Z",
+            "precision": "10year",
+            "timeEnd": "1743-01-01T00:00:00Z"
+        },
+        {
+            "title": "Construction of the Trans-Siberian Railway",
+            "timeStart": "1891-01-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1916-01-01T00:00:00Z"
+        }
+    ],
+    "Australian Exploration": [
+        {
+            "title": "Willem Janszoon's First Recorded European Landing on Australia",
+            "timeStart": "1606-03-01T00:00:00Z",
+            "precision": "month"
+        },
+        {
+            "title": "Dirk Hartog's Voyage and Landing at Shark Bay",
+            "timeStart": "1616-10-25T00:00:00Z",
             "precision": "day"
         },
         {
-            "title": "The Antarctic Treaty is signed",
-            "timeStart": "1959-12-01T00:00:00Z",
-            "precision": "day"
+            "title": "Abel Tasman's First Voyage to Australia",
+            "timeStart": "1642-08-14T00:00:00Z",
+            "precision": "month",
+            "timeEnd": "1643-06-15T00:00:00Z"
         },
         {
-            "title": "First International Geophysical Year (IGY) conducted",
-            "timeStart": "1957-07-01T00:00:00Z",
+            "title": "William Dampier's Exploration of Australia's Western Coast",
+            "timeStart": "1699-07-25T00:00:00Z",
+            "precision": "month",
+            "timeEnd": "1700-01-01T00:00:00Z"
+        },
+        {
+            "title": "Captain James Cook's First Voyage to the Pacific - East Coast of Australia",
+            "timeStart": "1768-08-26T00:00:00Z",
+            "precision": "month",
+            "timeEnd": "1771-07-12T00:00:00Z"
+        },
+        {
+            "title": "Matthew Flinders' Circumnavigation of Australia",
+            "timeStart": "1801-07-18T00:00:00Z",
+            "precision": "month",
+            "timeEnd": "1803-06-09T00:00:00Z"
+        },
+        {
+            "title": "Charles Sturt's Expedition to the Mouth of the Murray River",
+            "timeStart": "1829-11-10T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1830-02-09T00:00:00Z"
+        },
+        {
+            "title": "Edward Eyre's Expedition Across the Nullarbor Plain",
+            "timeStart": "1840-06-08T00:00:00Z",
+            "precision": "month",
+            "timeEnd": "1841-07-31T00:00:00Z"
+        },
+        {
+            "title": "Burke and Wills Expedition",
+            "timeStart": "1860-08-20T00:00:00Z",
+            "precision": "month",
+            "timeEnd": "1861-06-28T00:00:00Z"
+        }
+    ],
+    "Exploration of the Interior of Africa": [
+        {
+            "title": "Henry Morton Stanley's Expedition to Locate David Livingstone",
+            "timeStart": "1869-03-21T00:00:00Z",
             "precision": "year",
-            "timeEnd": "1958-12-31T00:00:00Z"
+            "timeEnd": "1871-11-10T00:00:00Z"
         },
         {
-            "title": "Establishment of the first permanent research station, Vostok Station",
-            "timeStart": "1957-02-01T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "International Antarctic Year launched",
-            "timeStart": "2007-03-01T00:00:00Z",
+            "title": "John Hanning Speke's Discovery of Lake Victoria as the Source of the Nile",
+            "timeStart": "1860-06-25T00:00:00Z",
             "precision": "year",
-            "timeEnd": "2008-03-01T00:00:00Z"
+            "timeEnd": "1863-02-10T00:00:00Z"
+        },
+        {
+            "title": "Paul Du Chaillu's Explorations in Gabon",
+            "timeStart": "1857-04-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1865-02-28T00:00:00Z"
+        },
+        {
+            "title": "Pierre Savorgnan de Brazza's Expeditions in the Congo Basin",
+            "timeStart": "1875-08-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1880-12-20T00:00:00Z"
+        },
+        {
+            "title": "Richard Francis Burton's Expedition to the African Great Lakes",
+            "timeStart": "1857-06-26T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1859-03-13T00:00:00Z"
+        },
+        {
+            "title": "The Emin Pasha Relief Expedition",
+            "timeStart": "1886-02-02T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1889-07-04T00:00:00Z"
+        },
+        {
+            "title": "Missionary Explorations of David Livingstone",
+            "timeStart": "1841-03-01T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1873-05-01T00:00:00Z"
+        },
+        {
+            "title": "Alexander Gordon Laing's Expedition to Timbuktu",
+            "timeStart": "1825-07-05T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1826-08-13T00:00:00Z"
+        },
+        {
+            "title": "Heinrich Barth's Travels in Northern and Central Africa",
+            "timeStart": "1850-03-18T00:00:00Z",
+            "precision": "year",
+            "timeEnd": "1855-08-24T00:00:00Z"
+        },
+        {
+            "title": "The Royal Geographical Society's African Expeditions",
+            "timeStart": "1830-01-01T00:00:00Z",
+            "precision": "10year",
+            "timeEnd": "1900-01-01T00:00:00Z"
         }
     ],
     "Space Exploration": [
         {
-            "title": "First Human in Space",
+            "title": "Launch of Sputnik 1",
+            "timeStart": "1957-10-04T00:00:00Z",
+            "precision": "day"
+        },
+        {
+            "title": "First Human in Space: Yuri Gagarin's Vostok 1",
             "timeStart": "1961-04-12T00:00:00Z",
             "precision": "day"
         },
         {
-            "title": "Moon Landing (Apollo 11)",
-            "timeStart": "1969-07-20T00:00:00Z",
-            "precision": "day"
+            "title": "Apollo 11 Moon Landing",
+            "timeStart": "1969-07-16T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1969-07-24T00:00:00Z"
         },
         {
-            "title": "Mars Rovers Mission (Spirit and Opportunity)",
-            "timeStart": "2004-01-04T00:00:00Z",
-            "precision": "day"
+            "title": "Launch of the First Space Shuttle (Columbia) - STS-1",
+            "timeStart": "1981-04-12T00:00:00Z",
+            "precision": "day",
+            "timeEnd": "1981-04-14T00:00:00Z"
         },
         {
-            "title": "Launch of the Hubble Space Telescope",
+            "title": "Launch of Hubble Space Telescope",
             "timeStart": "1990-04-24T00:00:00Z",
             "precision": "day"
         },
         {
-            "title": "First Space Shuttle Launch (STS-1)",
-            "timeStart": "1981-04-12T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "International Space Station (ISS) Assembly Begins",
+            "title": "International Space Station Assembly Begins",
             "timeStart": "1998-11-20T00:00:00Z",
             "precision": "day"
         },
         {
-            "title": "First Successful Landing on Comet (Rosetta)",
-            "timeStart": "2014-11-12T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "Mars Perseverance Rover Landing",
-            "timeStart": "2021-02-18T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "Launch of Voyager 1",
-            "timeStart": "1977-09-05T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "First Spacewalk by Alexei Leonov",
-            "timeStart": "1965-03-18T00:00:00Z",
-            "precision": "day"
-        }
-    ],
-    "Underwater Exploration": [
-        {
-            "title": "First Recorded Use of Submersible",
-            "timeStart": "1620-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Development of the Diving Bell",
-            "timeStart": "1690-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "First Submarine - 'Turtle' in American Revolutionary War",
-            "timeStart": "1776-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Investigation of the Deep Sea with the HMS Challenger Expedition",
-            "timeStart": "1872-12-21T00:00:00Z",
+            "title": "Mars Pathfinder Mission",
+            "timeStart": "1996-12-04T00:00:00Z",
             "precision": "day",
-            "timeEnd": "1876-05-20T00:00:00Z"
+            "timeEnd": "1997-09-27T00:00:00Z"
         },
         {
-            "title": "First Successful Test of the First Modern Submarine - 'Nautilus'",
-            "timeStart": "1888-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "First Dive to a Depth of 10,000 Meters by Jacques Piccard and Don Walsh in the Bathyscaphe Trieste",
-            "timeStart": "1960-01-23T00:00:00Z",
+            "title": "Voyager 1 Enters Interstellar Space",
+            "timeStart": "2012-08-25T00:00:00Z",
             "precision": "day"
         },
         {
-            "title": "Introduction of SCUBA Diving Gear",
-            "timeStart": "1943-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Discovery of the Titanic Wreck",
-            "timeStart": "1985-09-01T00:00:00Z",
-            "precision": "month"
-        },
-        {
-            "title": "Completion of the Human Genome Project, Potential for Underwater Bioprospecting",
-            "timeStart": "2003-04-14T00:00:00Z",
+            "title": "Curiosity Rover Lands on Mars",
+            "timeStart": "2012-08-06T00:00:00Z",
             "precision": "day"
         },
         {
-            "title": "First Successful Robotic Mission to the Mariana Trench 'DEEPSEA CHALLENGER'",
-            "timeStart": "2012-03-26T00:00:00Z",
+            "title": "SpaceX First Successful Falcon 9 Rocket Landing",
+            "timeStart": "2015-12-21T00:00:00Z",
             "precision": "day"
         },
         {
-            "title": "Ocean Cleanup Project Launch",
-            "timeStart": "2013-09-09T00:00:00Z",
+            "title": "Launch of James Webb Space Telescope",
+            "timeStart": "2021-12-25T00:00:00Z",
             "precision": "day"
-        },
-        {
-            "title": "Recent Advancements in Autonomous Underwater Vehicles (AUVs)",
-            "timeStart": "2020-01-01T00:00:00Z",
-            "precision": "year"
-        }
-    ],
-    "Archaeological Exploration": [
-        {
-            "title": "Publication of 'Die Antiken Bronzen' by Heinrich Schliemann",
-            "timeStart": "1873-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Excavations at Troy by Heinrich Schliemann",
-            "timeStart": "1870-01-01T00:00:00Z",
-            "precision": "10year",
-            "timeEnd": "1890-01-01T00:00:00Z"
-        },
-        {
-            "title": "Discovery of King Tutankhamun's tomb by Howard Carter",
-            "timeStart": "1922-11-04T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "The first International Congress of Archaeology",
-            "timeStart": "1874-01-01T00:00:00Z",
-            "precision": "year",
-            "timeEnd": "1874-12-31T00:00:00Z"
-        },
-        {
-            "title": "The rise of archaeological fieldwork methods and stratigraphy",
-            "timeStart": "1920-01-01T00:00:00Z",
-            "precision": "10year",
-            "timeEnd": "1930-01-01T00:00:00Z"
-        },
-        {
-            "title": "The development of radiocarbon dating",
-            "timeStart": "1949-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Inauguration of the Archaeological Institute of America",
-            "timeStart": "1879-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Introduction of feminist archaeology",
-            "timeStart": "1977-01-01T00:00:00Z",
-            "precision": "year"
-        },
-        {
-            "title": "Launch of the UNESCO World Heritage Program",
-            "timeStart": "1972-11-16T00:00:00Z",
-            "precision": "day"
-        },
-        {
-            "title": "Advancements in digital archaeology and 3D modeling",
-            "timeStart": "2000-01-01T00:00:00Z",
-            "precision": "10year",
-            "timeEnd": "2023-01-01T00:00:00Z"
         }
     ]
 }

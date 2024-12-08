@@ -1,0 +1,42 @@
+events:
+  - title: Columbus' First Voyage
+    timeStart: 1492-08-03T00:00:00
+    timeEnd: 1493-03-15T00:00:00
+    precision: day
+  - title: Treaty of Tordesillas
+    timeStart: 1494-06-07T00:00:00
+    precision: day
+  - title: Voyage of John Cabot
+    timeStart: 1497-05-02T00:00:00
+    timeEnd: 1497-08-06T00:00:00
+    precision: day
+  - title: Discovery of Brazil by Pedro Álvares Cabral
+    timeStart: 1500-04-22T00:00:00
+    precision: day
+  - title: Amerigo Vespucci's Voyage
+    timeStart: 1501-05-13T00:00:00
+    timeEnd: 1502-07-22T00:00:00
+    precision: day
+  - title: Hernán Cortés' Conquest of the Aztec Empire
+    timeStart: 1519-02-18T00:00:00
+    timeEnd: 1521-08-13T00:00:00
+    precision: day
+  - title: Ferdinand Magellan's Circumnavigation
+    timeStart: 1519-09-20T00:00:00
+    timeEnd: 1522-09-06T00:00:00
+    precision: day
+  - title: Francisco Pizarro's Conquest of the Incan Empire
+    timeStart: 1531-01-01T00:00:00
+    timeEnd: 1533-11-16T00:00:00
+    precision: year
+  - title: Jacques Cartier's Exploration of Canada
+    timeStart: 1534-04-20T00:00:00
+    timeEnd: 1542-09-01T00:00:00
+    precision: 10year
+  - title: Henry Hudson's Exploration of North America
+    timeStart: 1607-01-01T00:00:00
+    timeEnd: 1611-01-01T00:00:00
+    precision: 10year
+  - title: Pilgrims' Landing at Plymouth
+    timeStart: 1620-12-21T00:00:00
+    precision: day

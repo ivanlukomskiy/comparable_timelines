@@ -1,0 +1,26 @@
+events:
+  - title: "Phoenician Maritime Dominance"
+    timeStart: "1200-01-01T00:00:00"
+    timeEnd: "600-01-01T00:00:00"
+    precision: century
+  - title: "Hanno the Navigator's Voyage"
+    timeStart: "500-01-01T00:00:00"
+    precision: 10year
+  - title: "Pytheas's Exploration of the North"
+    timeStart: "325-01-01T00:00:00"
+    timeEnd: "320-01-01T00:00:00"
+    precision: 10year
+  - title: "Himilco's Voyage to Northern Europe"
+    timeStart: "400-01-01T00:00:00"
+    precision: century
+  - title: "Greek Colonization Period"
+    timeStart: "800-01-01T00:00:00"
+    timeEnd: "500-01-01T00:00:00"
+    precision: century
+  - title: "First Possible Circumnavigation of Africa by Phoenicians"
+    timeStart: "600-01-01T00:00:00"
+    precision: 10year
+  - title: "Roman Republic Naval Expeditions"
+    timeStart: "264-01-01T00:00:00"
+    timeEnd: "146-01-01T00:00:00"
+    precision: 10year

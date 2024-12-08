@@ -1,0 +1,35 @@
+events:
+  - title: "Willem Janszoon's First Recorded European Landing on Australia"
+    timeStart: "1606-03-01T00:00:00Z"
+    precision: month
+  - title: "Dirk Hartog's Voyage and Landing at Shark Bay"
+    timeStart: "1616-10-25T00:00:00Z"
+    precision: day
+  - title: "Abel Tasman's First Voyage to Australia"
+    timeStart: "1642-08-14T00:00:00Z"
+    timeEnd: "1643-06-15T00:00:00Z"
+    precision: month
+  - title: "William Dampier's Exploration of Australia's Western Coast"
+    timeStart: "1699-07-25T00:00:00Z"
+    timeEnd: "1700-01-01T00:00:00Z"
+    precision: month
+  - title: "Captain James Cook's First Voyage to the Pacific - East Coast of Australia"
+    timeStart: "1768-08-26T00:00:00Z"
+    timeEnd: "1771-07-12T00:00:00Z"
+    precision: month
+  - title: "Matthew Flinders' Circumnavigation of Australia"
+    timeStart: "1801-07-18T00:00:00Z"
+    timeEnd: "1803-06-09T00:00:00Z"
+    precision: month
+  - title: "Charles Sturt's Expedition to the Mouth of the Murray River"
+    timeStart: "1829-11-10T00:00:00Z"
+    timeEnd: "1830-02-09T00:00:00Z"
+    precision: day
+  - title: "Edward Eyre's Expedition Across the Nullarbor Plain"
+    timeStart: "1840-06-08T00:00:00Z"
+    timeEnd: "1841-07-31T00:00:00Z"
+    precision: month
+  - title: "Burke and Wills Expedition"
+    timeStart: "1860-08-20T00:00:00Z"
+    timeEnd: "1861-06-28T00:00:00Z"
+    precision: month

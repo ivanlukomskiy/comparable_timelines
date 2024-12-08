@@ -1,0 +1,41 @@
+events:
+  - title: "Henry Morton Stanley's Expedition to Locate David Livingstone"
+    timeStart: "1869-03-21T00:00:00Z"
+    timeEnd: "1871-11-10T00:00:00Z"
+    precision: year
+  - title: "John Hanning Speke's Discovery of Lake Victoria as the Source of the Nile"
+    timeStart: "1860-06-25T00:00:00Z"
+    timeEnd: "1863-02-10T00:00:00Z"
+    precision: year
+  - title: "Paul Du Chaillu's Explorations in Gabon"
+    timeStart: "1857-04-01T00:00:00Z"
+    timeEnd: "1865-02-28T00:00:00Z"
+    precision: year
+  - title: "Pierre Savorgnan de Brazza's Expeditions in the Congo Basin"
+    timeStart: "1875-08-01T00:00:00Z"
+    timeEnd: "1880-12-20T00:00:00Z"
+    precision: year
+  - title: "Richard Francis Burton's Expedition to the African Great Lakes"
+    timeStart: "1857-06-26T00:00:00Z"
+    timeEnd: "1859-03-13T00:00:00Z"
+    precision: year
+  - title: "The Emin Pasha Relief Expedition"
+    timeStart: "1886-02-02T00:00:00Z"
+    timeEnd: "1889-07-04T00:00:00Z"
+    precision: year
+  - title: "Missionary Explorations of David Livingstone"
+    timeStart: "1841-03-01T00:00:00Z"
+    timeEnd: "1873-05-01T00:00:00Z"
+    precision: year
+  - title: "Alexander Gordon Laing's Expedition to Timbuktu"
+    timeStart: "1825-07-05T00:00:00Z"
+    timeEnd: "1826-08-13T00:00:00Z"
+    precision: year
+  - title: "Heinrich Barth's Travels in Northern and Central Africa"
+    timeStart: "1850-03-18T00:00:00Z"
+    timeEnd: "1855-08-24T00:00:00Z"
+    precision: year
+  - title: "The Royal Geographical Society's African Expeditions"
+    timeStart: "1830-01-01T00:00:00Z"
+    timeEnd: "1900-01-01T00:00:00Z"
+    precision: 10year

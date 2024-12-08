@@ -1,0 +1,39 @@
+events:
+  - title: "Willem Barentsz's First Arctic Voyage"
+    timeStart: "1594-06-05T00:00:00"
+    timeEnd: "1594-11-29T00:00:00"
+    precision: day
+  - title: "Willem Barentsz's Second Arctic Voyage"
+    timeStart: "1595-06-02T00:00:00"
+    timeEnd: "1595-11-17T00:00:00"
+    precision: day
+  - title: "Willem Barentsz's Third Arctic Voyage"
+    timeStart: "1596-05-10T00:00:00"
+    timeEnd: "1597-06-01T00:00:00"
+    precision: month
+  - title: "Hudson's Attempt to Find a Polar Sea Route"
+    timeStart: "1607-05-01T00:00:00"
+    timeEnd: "1607-09-15T00:00:00"
+    precision: month
+  - title: "Bering's First Kamchatka Expedition"
+    timeStart: "1728-02-13T00:00:00"
+    timeEnd: "1730-12-01T00:00:00"
+    precision: year
+  - title: "James Cook's First Voyage to the Antarctic Circle"
+    timeStart: "1772-07-13T00:00:00"
+    timeEnd: "1775-07-30T00:00:00"
+    precision: year
+  - title: "Fabian von Bellingshausen's Antarctic Expedition"
+    timeStart: "1819-11-16T00:00:00"
+    timeEnd: "1821-08-04T00:00:00"
+    precision: year
+  - title: "John Franklin's Lost Arctic Expedition"
+    timeStart: "1845-05-19T00:00:00"
+    precision: day
+  - title: "Fridtjof Nansen's Fram Expedition"
+    timeStart: "1893-06-24T00:00:00"
+    timeEnd: "1896-08-13T00:00:00"
+    precision: year
+  - title: "Roald Amundsen Reaches the South Pole"
+    timeStart: "1911-12-14T00:00:00"
+    precision: day

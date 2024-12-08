@@ -1,19 +1,27 @@
 periods:
-  - title: "Great Maritime Discoveries"
-    time: 15, 16
-  - title: "Arctic Exploration"
-    time: 16, 17, 18, 19, 20
-  - title: "Land Exploration (Asia and Beyond)"
-    time: 13, 14, 15, 16
-  - title: "African Exploration"
-    time: 15, 16, 17
-  - title: "Pacific Exploration"
-    time: 16, 17, 18
-  - title: "Antarctic Exploration"
-    time: 19, 20
-  - title: "Space Exploration"
-    time: 20, 21
-  - title: "Underwater Exploration"
-    time: 19, 20, 21
-  - title: "Archaeological Exploration"
-    time: 19, 20, 21
+  - title: Ancient Maritime Exploration
+    time: -12,-3
+  - title: Silk Road and Asian Exploration
+    time: -2,14
+  - title: Norse and Viking Exploration
+    time: 8,11
+  - title: Medieval Arab Exploration
+    time: 8,14
+  - title: European Age of Discovery
+    time: 15,17
+  - title: Exploration of the Americas
+    time: 15,19
+  - title: Polar Exploration
+    time: 17,20
+  - title: Pacific Exploration
+    time: 16,19
+  - title: African Exploration
+    time: 18,19
+  - title: Siberian and Asian Land Conquest
+    time: 16,19
+  - title: Australian Exploration
+    time: 17,19
+  - title: Exploration of the Interior of Africa
+    time: 19,20
+  - title: Space Exploration
+    time: 20,21

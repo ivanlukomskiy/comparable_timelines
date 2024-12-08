@@ -1,9 +1,10 @@
-Please, highlight me main events of periods of this topic: $period, spanned through centuries: $centuries
+Please, highlight the main events/voyages of this topic: $period, spanned through centuries: $centuries
 Format the answer as a yaml file without markup (triple `).
 It should have "events" as a root key.
 its value is an array of objects that have "title", "timeStart", "timeEnd" and "precision".
 time should ALWAYS be formatted as ISO datetime. don't use smth like "16th century"!
 if it's one-off event, omit "timeEnd".
+Whenever possible, use both start and end, so instead of "voyage started" with only "timeStart" use "voyage" with "timeStart and "timeEnd"
 for some historical events we don't know precise day when it happened, so:
 precision is how sure we are about the date, might have one of these values:
 day - we know specific day

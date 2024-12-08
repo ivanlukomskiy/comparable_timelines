@@ -1,0 +1,47 @@
+events:
+  - title: "Launch of Sputnik 1"
+    timeStart: "1957-10-04T00:00:00Z"
+    precision: day
+
+  - title: "First Human in Space: Yuri Gagarin's Vostok 1"
+    timeStart: "1961-04-12T00:00:00Z"
+    precision: day
+
+  - title: "Apollo 11 Moon Landing"
+    timeStart: "1969-07-16T00:00:00Z"
+    timeEnd: "1969-07-24T00:00:00Z"
+    precision: day
+
+  - title: "Launch of the First Space Shuttle (Columbia) - STS-1"
+    timeStart: "1981-04-12T00:00:00Z"
+    timeEnd: "1981-04-14T00:00:00Z"
+    precision: day
+
+  - title: "Launch of Hubble Space Telescope"
+    timeStart: "1990-04-24T00:00:00Z"
+    precision: day
+
+  - title: "International Space Station Assembly Begins"
+    timeStart: "1998-11-20T00:00:00Z"
+    precision: day
+
+  - title: "Mars Pathfinder Mission"
+    timeStart: "1996-12-04T00:00:00Z"
+    timeEnd: "1997-09-27T00:00:00Z"
+    precision: day
+
+  - title: "Voyager 1 Enters Interstellar Space"
+    timeStart: "2012-08-25T00:00:00Z"
+    precision: day
+
+  - title: "Curiosity Rover Lands on Mars"
+    timeStart: "2012-08-06T00:00:00Z"
+    precision: day
+
+  - title: "SpaceX First Successful Falcon 9 Rocket Landing"
+    timeStart: "2015-12-21T00:00:00Z"
+    precision: day
+
+  - title: "Launch of James Webb Space Telescope"
+    timeStart: "2021-12-25T00:00:00Z"
+    precision: day

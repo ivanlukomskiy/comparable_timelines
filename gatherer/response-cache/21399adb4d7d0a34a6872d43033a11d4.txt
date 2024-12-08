@@ -1,0 +1,27 @@
+events:
+  - title: "Yermak's Conquest of Siberia"
+    timeStart: "1581-01-01T00:00:00Z"
+    timeEnd: "1585-01-01T00:00:00Z"
+    precision: year
+  - title: "Founding of Tomsk"
+    timeStart: "1604-01-01T00:00:00Z"
+    precision: year
+  - title: "Russian Consolidation of Control over Siberia"
+    timeStart: "1601-01-01T00:00:00Z"
+    timeEnd: "1700-01-01T00:00:00Z"
+    precision: century
+  - title: "Founding of Yakutsk"
+    timeStart: "1632-01-01T00:00:00Z"
+    precision: year
+  - title: "Vitus Bering's First Expedition"
+    timeStart: "1725-01-01T00:00:00Z"
+    timeEnd: "1730-01-01T00:00:00Z"
+    precision: 10year
+  - title: "Vitus Bering's Second Kamchatka Expedition"
+    timeStart: "1733-01-01T00:00:00Z"
+    timeEnd: "1743-01-01T00:00:00Z"
+    precision: 10year
+  - title: "Construction of the Trans-Siberian Railway"
+    timeStart: "1891-01-01T00:00:00Z"
+    timeEnd: "1916-01-01T00:00:00Z"
+    precision: year

@@ -1,0 +1,25 @@
+events:
+  - title: "Ibn Battuta's Travels"
+    timeStart: "1325-06-14T00:00:00"
+    timeEnd: "1354-01-01T00:00:00"
+    precision: year
+  - title: "Al-Masudi's Journey to India and East Africa"
+    timeStart: "916-01-01T00:00:00"
+    timeEnd: "920-01-01T00:00:00"
+    precision: year
+  - title: "Ahmad ibn Fadlan's Journey to the Volga Bulgars"
+    timeStart: "921-01-01T00:00:00"
+    timeEnd: "923-01-01T00:00:00"
+    precision: year
+  - title: "Al-Idrisi's Geographical Compilation for King Roger II of Sicily"
+    timeStart: "1138-01-01T00:00:00"
+    timeEnd: "1154-01-01T00:00:00"
+    precision: year
+  - title: "Yaqut al-Hamawi's Compilation of Geographical Dictionary"
+    timeStart: "1213-01-01T00:00:00"
+    timeEnd: "1224-01-01T00:00:00"
+    precision: year
+  - title: "Suleiman al-Tajir's Voyage to India"
+    timeStart: "850-01-01T00:00:00"
+    timeEnd: "851-01-01T00:00:00"
+    precision: year

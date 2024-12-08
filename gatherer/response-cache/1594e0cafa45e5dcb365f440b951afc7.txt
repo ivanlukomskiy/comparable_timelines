@@ -1,0 +1,33 @@
+events:
+  - title: "Lindisfarne Raid"
+    timeStart: "0793-06-08T00:00:00Z"
+    precision: day
+  - title: "First Viking Assault on Paris"
+    timeStart: "0845-03-28T00:00:00Z"
+    precision: day
+  - title: "Viking Settlement in Dublin"
+    timeStart: "0840-01-01T00:00:00Z"
+    timeEnd: "0870-12-31T23:59:59Z"
+    precision: 10year
+  - title: "Kingdom of York (Yorvik) Established"
+    timeStart: "0875-01-01T00:00:00Z"
+    timeEnd: "0954-12-31T23:59:59Z"
+    precision: 10year
+  - title: "Norse Settlement in Iceland"
+    timeStart: "0874-01-01T00:00:00Z"
+    timeEnd: "0930-12-31T23:59:59Z"
+    precision: 10year
+  - title: "Greenland Discovered by Erik the Red"
+    timeStart: "0985-01-01T00:00:00Z"
+    timeEnd: "0986-12-31T23:59:59Z"
+    precision: year
+  - title: "Leif Erikson's Voyage to Vinland"
+    timeStart: "1000-01-01T00:00:00Z"
+    timeEnd: "1001-12-31T23:59:59Z"
+    precision: year
+  - title: "Viking Siege of Canterbury"
+    timeStart: "1011-09-08T00:00:00Z"
+    precision: day
+  - title: "End of Norse Age with Battle of Stamford Bridge"
+    timeStart: "1066-09-25T00:00:00Z"
+    precision: day
