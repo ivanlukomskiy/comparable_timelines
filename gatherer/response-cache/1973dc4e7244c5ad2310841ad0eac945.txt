@@ -1,0 +1,49 @@
+events:
+  - title: "First Recorded Use of Submersible"
+    timeStart: "1620-01-01T00:00:00Z"
+    precision: "year"
+  
+  - title: "Development of the Diving Bell"
+    timeStart: "1690-01-01T00:00:00Z"
+    precision: "year"
+
+  - title: "First Submarine - 'Turtle' in American Revolutionary War"
+    timeStart: "1776-01-01T00:00:00Z"
+    precision: "year"
+
+  - title: "Investigation of the Deep Sea with the HMS Challenger Expedition"
+    timeStart: "1872-12-21T00:00:00Z"
+    timeEnd: "1876-05-20T00:00:00Z"
+    precision: "day"
+
+  - title: "First Successful Test of the First Modern Submarine - 'Nautilus'"
+    timeStart: "1888-01-01T00:00:00Z"
+    precision: "year"
+
+  - title: "First Dive to a Depth of 10,000 Meters by Jacques Piccard and Don Walsh in the Bathyscaphe Trieste"
+    timeStart: "1960-01-23T00:00:00Z"
+    precision: "day"
+
+  - title: "Introduction of SCUBA Diving Gear"
+    timeStart: "1943-01-01T00:00:00Z"
+    precision: "year"
+
+  - title: "Discovery of the Titanic Wreck"
+    timeStart: "1985-09-01T00:00:00Z"
+    precision: "month"
+
+  - title: "Completion of the Human Genome Project, Potential for Underwater Bioprospecting"
+    timeStart: "2003-04-14T00:00:00Z"
+    precision: "day"
+
+  - title: "First Successful Robotic Mission to the Mariana Trench 'DEEPSEA CHALLENGER'"
+    timeStart: "2012-03-26T00:00:00Z"
+    precision: "day"
+
+  - title: "Ocean Cleanup Project Launch"
+    timeStart: "2013-09-09T00:00:00Z"
+    precision: "day"
+
+  - title: "Recent Advancements in Autonomous Underwater Vehicles (AUVs)"
+    timeStart: "2020-01-01T00:00:00Z"
+    precision: "year"

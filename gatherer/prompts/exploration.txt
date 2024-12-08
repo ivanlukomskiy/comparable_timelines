@@ -1,0 +1,10 @@
+I want to create a timeline of exploration events during the human history.
+Let's create high-level list of periods of exploration.
+Like great maritime discoveries of the europeans (like Vasco da Gama voyage, Columbus, e.t.c.).
+Arctic exploration.
+Land exploration like Marco Polo or Siberia conquest.
+Add whatever I'm missing.
+Format the answer as a yaml file without markup (triple `).
+It should have "periods" as a root key.
+its value is an array of objects that have "title" and "time".
+"time" is centuries as int the period spanned, comma-separated

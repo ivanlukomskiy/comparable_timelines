@@ -1,0 +1,19 @@
+periods:
+  - title: "Great Maritime Discoveries"
+    time: 15, 16
+  - title: "Arctic Exploration"
+    time: 16, 17, 18, 19, 20
+  - title: "Land Exploration (Asia and Beyond)"
+    time: 13, 14, 15, 16
+  - title: "African Exploration"
+    time: 15, 16, 17
+  - title: "Pacific Exploration"
+    time: 16, 17, 18
+  - title: "Antarctic Exploration"
+    time: 19, 20
+  - title: "Space Exploration"
+    time: 20, 21
+  - title: "Underwater Exploration"
+    time: 19, 20, 21
+  - title: "Archaeological Exploration"
+    time: 19, 20, 21
