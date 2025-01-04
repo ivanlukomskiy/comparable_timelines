@@ -8,6 +8,7 @@ const period = 'European Age of Discovery';
 let events: TimelineEvent[] = [];
 const textPaddingRight = 20;
 const textPaddingLeft = 0;
+const rowHeight = 50;
 
 function getEvents() {
     if (events.length === 0) {
@@ -50,7 +51,7 @@ function renderEvent(ctx: CanvasRenderingContext2D, event: TimelineEvent, y: num
     }
     ctx.strokeStyle = '#00691d';
     ctx.lineWidth = 2;
-    ctx.rect(x0, y, x1-x0, 30);
+    ctx.rect(x0, y+5, x1-x0, 8);
     ctx.stroke();
     ctx.textAlign = "left";
     ctx.fillText(event.title, x0, y);
@@ -66,6 +67,11 @@ interface EventWithBounds {
 interface Row {
     y: number;
     events: EventWithBounds[];
+}
+
+interface PackedEvents {
+    rows: Row[];
+    height: number;
 }
 
 function getBounds(ctx: CanvasRenderingContext2D, event: TimelineEvent): EventWithBounds {
@@ -84,8 +90,8 @@ function getBounds(ctx: CanvasRenderingContext2D, event: TimelineEvent): EventWi
 }
 
 function isCollision(e1: EventWithBounds, e2: EventWithBounds): boolean {
-    return e1.x0 > e2.x0 && (e2.x1 > e1.x0 || e2.textEndX > e1.x0)
-        || e2.x0 > e1.x0 && (e1.x1 > e2.x0 || e1.textEndX > e2.x0);
+    return e1.x0 >= e2.x0 && (e2.x1 >= e1.x0 || e2.textEndX >= e1.x0)
+        || e2.x0 >= e1.x0 && (e1.x1 >= e2.x0 || e1.textEndX >= e2.x0);
 }
 
 function fits(event: EventWithBounds, row: Row) {
@@ -97,10 +103,9 @@ function fits(event: EventWithBounds, row: Row) {
     return true;
 }
 
-export function renderEvents(ctx: CanvasRenderingContext2D) {
+export function pack(ctx: CanvasRenderingContext2D, y: number): PackedEvents {
+    ctx.font = `24px Arial`;
     const rows: Row[] = [];
-    let y = 30;
-    const yDelta = 50;
     const events = getEvents();
     for (let i = 0; i < events.length; i++) {
         if (!isWithinBounds(events[i])) {
@@ -119,9 +124,14 @@ export function renderEvents(ctx: CanvasRenderingContext2D) {
         if (!added) {
             const newRow = {y, events: [event]};
             rows.push(newRow)
-            y += yDelta
+            y += rowHeight
         }
     }
+    return {rows, height: rows.length * rowHeight};
+}
+
+export function renderRows(ctx: CanvasRenderingContext2D, rows: Row[]) {
+    ctx.font = `24px Arial`;
     rows.forEach(row => {
         row.events.forEach(event => {
             renderEvent(ctx, event.event, row.y)

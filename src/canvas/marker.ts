@@ -4,7 +4,7 @@ import {$timelineRect} from "../stores/store.ts";
 import {$viewport} from "../stores/viewport.ts";
 
 
-export function renderMarker(ctx: CanvasRenderingContext2D) {
+export function renderMarker(ctx: CanvasRenderingContext2D, markerLength: number) {
     const mouseDate = $mouseDate.get();
     if (mouseDate === null) {
         return;
@@ -18,6 +18,6 @@ export function renderMarker(ctx: CanvasRenderingContext2D) {
     ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.moveTo(x, rect.y+rect.height/2);
-    ctx.lineTo(x, rect.y-rect.height/2);
+    ctx.lineTo(x, rect.y+rect.height/2-markerLength - rect.height);
     ctx.stroke();
 }

@@ -4,11 +4,10 @@ import {$timelineRect} from "../stores/store.ts";
 import {updateViewport} from "../stores/viewport.ts";
 import {processRequests} from "../stores/animation.ts";
 import {useZoom} from "../hooks/useZoom.ts";
-import {renderFpsMeter} from "./fpsMeter.ts";
 import {onRendered} from "../stores/debug.ts";
 import {useMouse} from "../hooks/useMouse.ts";
 import {renderMarker} from "./marker.ts";
-import {renderEvents} from "./events.ts";
+import {pack, renderRows} from "./events.ts";
 
 const Canvas: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -27,10 +26,17 @@ const Canvas: React.FC = () => {
         }
         updateViewport(animationTimestamp)
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // renderFpsMeter(180, 100, ctx);
+        const packed = pack(ctx, 30);
+        const eventsSectionHeight = packed.height;
+        const timelineRect = $timelineRect.get();
+        $timelineRect.set({
+            ...timelineRect,
+            y: 30 + eventsSectionHeight - 30,
+        })
+        renderMarker(ctx, eventsSectionHeight);
         renderTimeAxis(ctx);
-        renderFpsMeter(180, 100, ctx);
-        renderMarker(ctx);
-        renderEvents(ctx);
+        renderRows(ctx, packed.rows);
 
         onRendered();
         requestAnimationFrame(drawCanvas);
