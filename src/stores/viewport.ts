@@ -6,8 +6,8 @@ import {$timelineRect} from "./store.ts";
 
 const zoomPanTimeoutMillis = 100;
 const INITIAL_VIEWPORT: ViewPort = {
-    min: DateTime.fromObject({ year: 1000 }),
-    max: DateTime.fromObject({year: 1002}),
+    min: DateTime.fromObject({ year: 1400 }),
+    max: DateTime.fromObject({year: 1500}),
 }
 
 export const $viewport = atom<ViewPort>(INITIAL_VIEWPORT);
