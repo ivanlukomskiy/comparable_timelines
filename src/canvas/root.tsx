@@ -1,14 +1,14 @@
 import React, {useCallback, useEffect, useRef} from 'react';
-import {renderTimeAxis} from "../time-axis/TimeAxis.ts";
-import {$timelineRect} from "../../stores/store.ts";
-import {updateViewport} from "../../stores/viewport.ts";
-import {processRequests} from "../../stores/animation.ts";
-import {useZoom} from "../../hooks/useZoom.ts";
-import {renderFpsMeter} from "../fpsMeter/fpsMeter.ts";
-import {onRendered} from "../../stores/debug.ts";
-import {useMouse} from "../../hooks/useMouse.ts";
-import {renderMarker} from "../marker/marker.ts";
-import {renderEvents} from "../events.ts";
+import {renderTimeAxis} from "./timeAxis.ts";
+import {$timelineRect} from "../stores/store.ts";
+import {updateViewport} from "../stores/viewport.ts";
+import {processRequests} from "../stores/animation.ts";
+import {useZoom} from "../hooks/useZoom.ts";
+import {renderFpsMeter} from "./fpsMeter.ts";
+import {onRendered} from "../stores/debug.ts";
+import {useMouse} from "../hooks/useMouse.ts";
+import {renderMarker} from "./marker.ts";
+import {renderEvents} from "./events.ts";
 
 const Canvas: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);

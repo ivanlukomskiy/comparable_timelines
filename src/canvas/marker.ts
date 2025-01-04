@@ -1,7 +1,7 @@
-import {timeToX} from "../../types.ts";
-import {$mouseDate} from "../../stores/mouse.ts";
-import {$timelineRect} from "../../stores/store.ts";
-import {$viewport} from "../../stores/viewport.ts";
+import {timeToX} from "../types.ts";
+import {$mouseDate} from "../stores/mouse.ts";
+import {$timelineRect} from "../stores/store.ts";
+import {$viewport} from "../stores/viewport.ts";
 
 
 export function renderMarker(ctx: CanvasRenderingContext2D) {

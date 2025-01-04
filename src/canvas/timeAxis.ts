@@ -1,6 +1,6 @@
 import {DateTime, DurationUnit, Interval} from 'luxon';
-import {$timelineRect} from "../../stores/store.ts";
-import {$viewport, ViewPort, viewPortDuration} from "../../stores/viewport.ts";
+import {$timelineRect} from "../stores/store.ts";
+import {$viewport, ViewPort, viewPortDuration} from "../stores/viewport.ts";
 
 type TimeUnit = 'second' | 'minute' | 'hour' | 'day' | 'month' | 'year' | 'century';
 

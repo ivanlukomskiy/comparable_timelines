@@ -1,5 +1,5 @@
 import './App.css'
-import Canvas from "./canvas/root/Root.tsx";
+import Canvas from "./canvas/root.tsx";
 
 function App() {
   return (
