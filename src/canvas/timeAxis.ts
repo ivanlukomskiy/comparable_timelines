@@ -61,12 +61,13 @@ export function renderTimeAxis(ctx: CanvasRenderingContext2D) {
     const interval = Interval.fromDateTimes(viewport.min, viewport.max);
     // Draw the main horizontal line
 
-    ctx.strokeStyle = '#000000';  // Black color
+    ctx.strokeStyle = '#afafaf';  // Black color
     ctx.lineWidth = 2;  // Set line thickness
     ctx.beginPath();
     ctx.moveTo(rect.x, rect.y+rect.height/2);
     ctx.lineTo(rect.x+rect.width, rect.y+rect.height/2);
     ctx.stroke();
+    ctx.strokeStyle = '#000000';  // Black color
     units.forEach((unit, index) => {
         const isMainUnit = index === 0;
         const fontSize = isMainUnit ? 14 : 10;

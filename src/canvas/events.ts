@@ -158,8 +158,7 @@ export function renderRows(ctx: CanvasRenderingContext2D, pack: PackedEvents) {
     ctx.font = `24px Arial`;
     pack.rows.forEach((row, rowId) => {
         row.events.forEach(event => {
-            renderEvent(ctx, event, row.y, (pack.rows.length - rowId) * rowHeight
-                + $timelineRect.get().height/4) // fixme its arbitrary
+            renderEvent(ctx, event, row.y, (pack.rows.length - rowId) * rowHeight)
         })
     })
 }
