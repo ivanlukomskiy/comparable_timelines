@@ -30,7 +30,7 @@ function renderEvent(ctx: CanvasRenderingContext2D, event: TimelineEvent) {
     if (event.timeStart > $viewport.get().max || event.timeEnd && event.timeEnd < $viewport.get().min) {
         return;
     }
-    console.log("event", event)
+    // console.log("event", event)
 }
 
 export function renderEvents(ctx: CanvasRenderingContext2D) {
