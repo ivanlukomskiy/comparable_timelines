@@ -36,7 +36,7 @@ const Canvas: React.FC = () => {
         })
         renderMarker(ctx, eventsSectionHeight);
         renderTimeAxis(ctx);
-        renderRows(ctx, packed.rows);
+        renderRows(ctx, packed);
 
         onRendered();
         requestAnimationFrame(drawCanvas);

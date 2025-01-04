@@ -9,6 +9,9 @@ let events: TimelineEvent[] = [];
 const textPaddingRight = 20;
 const textPaddingLeft = 0;
 const rowHeight = 50;
+const textPaddingTop = 20;
+const timespanPaddingTop = 30;
+const timespanHeight = 8;
 
 function getEvents() {
     if (events.length === 0) {
@@ -35,7 +38,8 @@ function isWithinBounds(event: TimelineEvent): boolean {
     return !(event.timeStart > viewPort.max || event.timeEnd && event.timeEnd < viewPort.min);
 }
 
-function renderEvent(ctx: CanvasRenderingContext2D, event: TimelineEvent, y: number) {
+function renderEvent(ctx: CanvasRenderingContext2D, ewb: EventWithBounds, y: number, footnoteLen: number) {
+    const event = ewb.event;
     const viewPort = $viewport.get();
     if (event.timeStart > viewPort.max || event.timeEnd && event.timeEnd < viewPort.min) {
         return;
@@ -49,12 +53,30 @@ function renderEvent(ctx: CanvasRenderingContext2D, event: TimelineEvent, y: num
     if (!x0 || !x1) {
         throw "unexpected n/a x0 or x1"
     }
+    ctx.beginPath()
+    ctx.fillStyle = '#dadada'
+    // ctx.fillRect(ewb.x0, y+textPaddingTop, Math.max(ewb.textEndX, ewb.x1) - x0, rowHeight);
+    ctx.fillStyle = '#000000'
+    ctx.strokeStyle = 'rgb(174,193,179)';
+    if (event.timeStart > viewPort.min) {
+        ctx.beginPath();
+        ctx.moveTo(x0, y+timespanPaddingTop);
+        ctx.lineTo(x0, y+timespanPaddingTop+footnoteLen);
+        ctx.stroke();
+    }
+    if (event.timeEnd && event.timeStart < viewPort.max) {
+        ctx.beginPath();
+        ctx.moveTo(x1, y+timespanPaddingTop);
+        ctx.lineTo(x1, y+timespanPaddingTop+footnoteLen);
+        ctx.stroke();
+    }
+    ctx.beginPath()
     ctx.strokeStyle = '#00691d';
     ctx.lineWidth = 2;
-    ctx.rect(x0, y+5, x1-x0, 8);
+    ctx.rect(x0, y+timespanPaddingTop, x1-x0, timespanHeight);
     ctx.stroke();
     ctx.textAlign = "left";
-    ctx.fillText(event.title, x0, y);
+    ctx.fillText(event.title, x0+textPaddingLeft, y+textPaddingTop);
 }
 
 interface EventWithBounds {
@@ -62,6 +84,7 @@ interface EventWithBounds {
     x0: number;
     x1: number;
     textEndX: number;
+    textHeight: number;
 }
 
 interface Row {
@@ -86,7 +109,8 @@ function getBounds(ctx: CanvasRenderingContext2D, event: TimelineEvent): EventWi
         throw "no x0/x1"
     }
     const textMeasurements = ctx.measureText(event.title);
-    return {x0, x1, textEndX: x0 + textMeasurements.width + textPaddingLeft + textPaddingRight, event}
+    const textHeight = textMeasurements.emHeightAscent + textMeasurements.emHeightDescent;
+    return {x0, x1, textEndX: x0 + textMeasurements.width + textPaddingLeft + textPaddingRight, event, textHeight}
 }
 
 function isCollision(e1: EventWithBounds, e2: EventWithBounds): boolean {
@@ -130,11 +154,12 @@ export function pack(ctx: CanvasRenderingContext2D, y: number): PackedEvents {
     return {rows, height: rows.length * rowHeight};
 }
 
-export function renderRows(ctx: CanvasRenderingContext2D, rows: Row[]) {
+export function renderRows(ctx: CanvasRenderingContext2D, pack: PackedEvents) {
     ctx.font = `24px Arial`;
-    rows.forEach(row => {
+    pack.rows.forEach((row, rowId) => {
         row.events.forEach(event => {
-            renderEvent(ctx, event.event, row.y)
+            renderEvent(ctx, event, row.y, (pack.rows.length - rowId) * rowHeight
+                + $timelineRect.get().height/4) // fixme its arbitrary
         })
     })
 }
