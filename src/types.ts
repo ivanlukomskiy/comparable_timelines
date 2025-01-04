@@ -30,3 +30,19 @@ export function timeToX(time: DateTime, timelineRect: Rect, viewPort: ViewPort):
     const fraction = diffMouse.valueOf() / diff.valueOf();
     return timelineRect.width * fraction + timelineRect.x;
 }
+
+export interface EventRaw {
+    title: string;
+    timeStart: string;
+    timeEnd?: string;
+    precision: string
+}
+
+export interface TimelineEvent {
+    title: string;
+    timeStart: DateTime;
+    timeEnd?: DateTime;
+    precision: Precision;
+}
+
+export type Precision = 'day' | 'year' | '10year' | 'month' | 'century';

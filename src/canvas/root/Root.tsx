@@ -8,7 +8,7 @@ import {renderFpsMeter} from "../fpsMeter/fpsMeter.ts";
 import {onRendered} from "../../stores/debug.ts";
 import {useMouse} from "../../hooks/useMouse.ts";
 import {renderMarker} from "../marker/marker.ts";
-
+import {renderEvents} from "../events.ts";
 
 const Canvas: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -30,6 +30,7 @@ const Canvas: React.FC = () => {
         renderTimeAxis(ctx);
         renderFpsMeter(180, 100, ctx);
         renderMarker(ctx);
+        renderEvents(ctx);
 
         onRendered();
         requestAnimationFrame(drawCanvas);

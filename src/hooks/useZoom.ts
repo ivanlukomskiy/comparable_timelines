@@ -17,7 +17,7 @@ export function useZoom({canvasRef}: UseViewPortProps) {
             return;
         }
         const handleWheel = (e: WheelEvent) => {
-            console.log('wheeling')
+            // console.log('wheeling')
             e.preventDefault();
             const pivot = mouseToTime(e.offsetX * devicePixelRatio, $timelineRect.get(), $viewport.get());
             if (!pivot) {
@@ -25,7 +25,7 @@ export function useZoom({canvasRef}: UseViewPortProps) {
             }
             const advance = 1 + ZOOM_SPEED * Math.abs(e.deltaY);
             const targetZoom = e.deltaY < 0 ? 1 / advance : advance;
-            console.log("targetZoom", targetZoom, e.deltaY)
+            // console.log("targetZoom", targetZoom, e.deltaY)
             startZoom(pivot, targetZoom);
         }
         canvas.addEventListener('wheel', handleWheel);

@@ -91,8 +91,11 @@ export function startZoom(pivot: DateTime, zoom: number) {
     $viewportRequest.set({durationMillis: zoomPanTimeoutMillis, target})
     requestAnimation('zoom', zoomPanTimeoutMillis)
 }
-export function startPan(pan: number) {
-    const target = applyPan($viewportState.get().targetViewPort, pan)
-    $viewportRequest.set({durationMillis: zoomPanTimeoutMillis, target})
-    requestAnimation('zoom', zoomPanTimeoutMillis)
-}
+// export function pan(delta: Duration) {
+    // $viewportState.set(state => {
+    //     return {
+    //         startViewPort: state.startViewPort.min.
+    //         ...state
+    //     }
+    // })
+// }

@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {mouseToTime} from "../types.ts";
 import {$timelineRect} from "../stores/store.ts";
 import {$viewport} from "../stores/viewport.ts";
-import {$mouseDate} from "../stores/mouse.ts";
+import {$mouseDate, $prevMouseDrag} from "../stores/mouse.ts";
 
 interface UseMouseProps {
     canvasRef:  React.MutableRefObject<HTMLCanvasElement | null>;
@@ -23,6 +23,16 @@ export function useMouse({canvasRef}: UseMouseProps) {
             }
             if (e.type === 'mousemove') {
                 $mouseDate.set(pivot);
+                const prevDraggingTime = $prevMouseDrag.get();
+                // if (prevDraggingTime) {
+                //     $viewport.
+                // }
+            }
+            if (e.type === 'mousedown') {
+                $prevMouseDrag.set(pivot);
+            }
+            if (e.type === 'mouseup') {
+                $prevMouseDrag.set(null);
             }
         }
         canvas.addEventListener('mousemove', handleMouse);
